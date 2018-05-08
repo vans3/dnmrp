@@ -1,6 +1,0 @@
-172.17.0.1 - - [08/May/2018:13:53:01 +0000] "GET / HTTP/1.1" 200 106978 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36" "-"
-172.17.0.1 - - [08/May/2018:14:03:30 +0000] "GET / HTTP/1.1" 200 106892 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36" "-"
-172.17.0.1 - - [08/May/2018:14:03:31 +0000] "GET /favicon.ico HTTP/1.1" 404 572 "http://www.site1.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36" "-"
-172.17.0.1 - - [08/May/2018:14:03:36 +0000] "GET / HTTP/1.1" 301 186 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36" "-"
-172.17.0.1 - - [08/May/2018:14:03:56 +0000] "GET / HTTP/2.0" 200 106751 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36" "-"
-172.17.0.1 - - [08/May/2018:14:03:57 +0000] "GET /favicon.ico HTTP/2.0" 404 572 "https://www.site2.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36" "-"
