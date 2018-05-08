@@ -1,2 +1,62 @@
 # dnmrp
-使用dockedocker容器安装lnmrp环境，(linux,nginx,mysql,redis,php)目录结构清晰，方便后续扩展，PHP扩展基本已经全部安装，可根据自己的需求自行修改
+Docker deploying Nginx MySQL Redis PHP7 in one key, support full feature functions.
+
+![Demo Image](./dnmrp.png)
+
+### Feature
+1. Completely open source.
+2. Support Multiple PHP version(PHP5.4, PHP5.6, PHP7.2) switch.
+3. Support Multiple domains.
+4. Support HTTPS and HTTP/2.
+5. PHP source located in host.
+6. MySQL data directory in host.
+7. Redis data persistence directory in host.
+8. All conf files located in host.
+9. All log files located in host.
+10. Built-in PHP extensions install commands.
+11. Promise 100% available.
+12. Supported any OS with docker.
+
+### Usage
+1. Install `git`, `docker` and `docker-compose`;
+2. Clone project:
+    ```
+    $ git clone https://github.com/874299692/dnmrp.git
+    ```
+4. Start docker containers:
+    ```
+    $ cd dnmrp
+    $ docker-compose up
+    ```
+    You may need use `sudo` before this command in Linux.
+5. Go to your browser and type `localhost`, you will see:
+
+![Demo Image](./index.png)
+
+The index file is located in `./www/site1/`.
+
+### Other PHP version?
+Default, we start LATEST PHP version by using:
+```
+$ docker-compose up
+```
+we can also start PHP5.4 or PHP5.6 by using:
+```
+$ docker-compose -f docker-compose54.yml up
+$ docker-compose -f docker-compose56.yml up
+```
+We need not change any other files, such as nginx config file or php.ini, everything will work fine in current environment (except code compatibility error).
+
+> Notice: We can only start one php version, for they using same port. We must STOP the running project then START the other one.
+
+### HTTPS and HTTP/2
+Default demo include 2 sites:
+* http://www.site1.com (same with http://localhost)
+* https://www.site2.com
+
+To preview them, add 2 lines to your hosts file (at `/etc/hosts` on Linux and `C:\Windows\System32\drivers\etc\hosts` on Windows):
+```
+127.0.0.1 www.site1.com
+127.0.0.1 www.site2.com
+```
+Then you can visit from browser.

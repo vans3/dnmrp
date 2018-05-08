@@ -1,0 +1,2 @@
+2018/05/08 14:03:31 [error] 7#7: *4 open() "/var/www/html/site1/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "www.site1.com", referrer: "http://www.site1.com/"
+2018/05/08 14:03:57 [error] 7#7: *15 open() "/var/www/html/site2/favicon.ico" failed (2: No such file or directory), client: 172.17.0.1, server: www.site2.com, request: "GET /favicon.ico HTTP/2.0", host: "www.site2.com", referrer: "https://www.site2.com/"
